@@ -23,6 +23,10 @@ export default {
       var x = await require("./data.json");
       
       const data = {
+
+        red: 1,
+        green: 1,
+        activeRed: true,
         "name": x
       };
 

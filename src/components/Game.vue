@@ -18,8 +18,8 @@
 
         <span id="num"></span>
 
-        <button @click="getNum" class="play1">1</button>
-        <button @click="getNum" class="play2">2</button>
+        <button @click="getNum('green')" class="play1" :disabled="activeRed">1</button>
+        <button @click="getNum('red')" class="play2" :disabled="!activeRed">2</button>
     </div>
 
   
@@ -37,23 +37,89 @@ export default {
   },
   data(){
     return{
-      allval: []
+      allval: [],
+      red: 1,
+      green: 1,
+      activeRed: true
     }
   },
   created(){
 
     db.collection("ludo").doc("data1")
     .onSnapshot((doc) => {
-        this.allval = doc.data().name;
-        //console.log("Current data: ", doc.data());
+
+        var dataAll = doc.data();
+
+        this.allval = dataAll.name;
+        this.red = dataAll.red;
+        this.green = dataAll.green;
+        this.activeRed = dataAll.activeRed;
+        
     });
 
   },
   methods: {
-      getNum(){
-          console.log("abcd");
+      async getNum(col){
+          
+          var docRef = await db.collection("ludo").doc("data1");
+
+          var dataAll = await docRef.get().then((doc) => {
+              return doc.data();
+          });
+
+          let diceVal  = Math.abs(Math.ceil(Math.random() * 10 - 5)) + 1;
+
+        
+          let playerVal = dataAll[col];
+
+         if((diceVal + playerVal) == 100){
+           // alert str winner, new game ok;
+
+            
+            this.activeRed = true;
+            this.red = 1;
+            this.green = 1;
+
+        }
+    else if(diceVal + playerVal > 100){
+        
+            this.activeRed = !this.activeRed;
+    }
+    else{
+  
+
+        //travel function() with setInterval
+        
+        this.allval[playerVal-1][col] = false;
+
+        playerVal += diceVal;
+        this.allval[playerVal-1][col] = true;
+        
+        
+        if(this.activeRed){
+          //console.log(playerVal);
+          this.red = playerVal;
+        }
+        else{
+            this.green = playerVal;
+        }
+        
+        this.activeRed = !this.activeRed;
+      
       }
+
+     await db.collection("ludo").doc("data1")
+    .set({
+
+        name: this.allval,
+        green: this.green,
+        red: this.red,
+        activeRed: this.activeRed
+        
+    }); 
   }
+}
+
 }
 </script>
 

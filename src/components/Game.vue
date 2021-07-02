@@ -67,12 +67,21 @@ export default {
               return doc.data();
           });
 
-          let diceVal  = Math.abs(Math.ceil(Math.random() * 10 - 5)) + 1;
+          let diceVal  = Math.abs(Math.ceil(Math.random() * 10 - 5)) +1;
 
         
           let playerVal = dataAll[col];
 
-         if((diceVal + playerVal) == 100){
+              if(playerVal = 1){
+            if(diceVal == 6 || diceVal == 1){
+                console.log("at1");
+            }
+            else{
+                
+                this.activeRed != this.activeRed;
+            }
+        }
+        else if((diceVal + playerVal) == 100){
            // alert str winner, new game ok;
 
             

@@ -8,8 +8,8 @@
               <span class="downArr" v-if="val.plusminus < 0">&#x2193;<b> {{val.plusminus}}</b></span>
             </div>
             <b v-if="!val.isSnakeOrLadder"> {{index + 1}} </b> 
-            <div class="circle circle1" v-if="!val.red"></div>
-            <div class="circle circle2" v-if="!val.green"></div>
+            <div class="circle circle1" v-if="val.red"></div>
+            <div class="circle circle2" v-if="val.green"></div>
         </div>
         
     </div>
@@ -139,10 +139,10 @@ export default {
 }
 
 .upArr{
-  color: red;
+  color: rgb(127, 250, 178);
 }
 
 .downArr{
-  color:  #04AA6D;
+  color:  rgb(250, 98, 98);
 }
 </style>

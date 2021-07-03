@@ -69,30 +69,19 @@ export default {
 
           let diceVal  = Math.abs(Math.ceil(Math.random() * 10 - 5)) +1;
 
+        var playerVal = dataAll[col]
         
-          let playerVal = dataAll[col];
-
-              if(playerVal = 1){
-            if(diceVal == 6 || diceVal == 1){
-                console.log("at1");
-            }
-            else{
-                
-                this.activeRed != this.activeRed;
-            }
-        }
-        else if((diceVal + playerVal) == 100){
+          if((diceVal + playerVal) == 100){
            // alert str winner, new game ok;
 
             
             this.activeRed = true;
             this.red = 1;
             this.green = 1;
-
+            return
         }
     else if(diceVal + playerVal > 100){
         
-            this.activeRed = !this.activeRed;
     }
     else{
   
@@ -113,7 +102,6 @@ export default {
             this.green = playerVal;
         }
         
-        this.activeRed = !this.activeRed;
       
       }
 
@@ -124,6 +112,35 @@ export default {
         green: this.green,
         red: this.red,
         activeRed: this.activeRed
+        
+    }); 
+
+    
+        function timeout(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+
+    if(this.allval[playerVal-1].isSnakeOrLadder){
+        
+        
+        await timeout(2000);
+          this.allval[playerVal-1][col] = false;
+
+          playerVal += this.allval[playerVal-1].plusminus
+          
+          this.allval[playerVal-1][col] = true; 
+
+             
+
+    }
+
+    await db.collection("ludo").doc("data1").set({
+
+        name: this.allval,
+        green: this.green,
+        red: this.red,
+        activeRed: !this.activeRed
         
     }); 
   }

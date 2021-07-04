@@ -56,6 +56,7 @@ export default {
         this.red = dataAll.red;
         this.green = dataAll.green;
         this.activeRed = dataAll.activeRed;
+        this.dice = dataAll.dice;
         
     });
 
@@ -115,6 +116,7 @@ export default {
         name: this.allval,
         green: this.green,
         red: this.red,
+        dice: this.dice,
         activeRed: this.activeRed
         
     }); 
@@ -150,6 +152,7 @@ export default {
         name: this.allval,
         green: this.green,
         red: this.red,
+        dice: this.dice,
         activeRed: !this.activeRed
         
     }); 

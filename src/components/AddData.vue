@@ -1,7 +1,7 @@
 <template>
 
 <div>
-  <div><button @click="dataToDb">add data</button></div>
+  <div><button @click="dataToDb">reset value</button></div>
 </div> 
 </template>
 

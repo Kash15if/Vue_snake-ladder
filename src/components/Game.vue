@@ -126,12 +126,20 @@ export default {
         
         await timeout(2000);
           this.allval[playerVal-1][col] = false;
+          console.log(this.allval[playerVal-1][col])
 
           playerVal += this.allval[playerVal-1].plusminus
           
           this.allval[playerVal-1][col] = true; 
+          console.log(this.allval[playerVal-1][col])
 
-             
+          if(this.activeRed){
+          //console.log(playerVal);
+          this.red = playerVal;
+          }
+          else{
+            this.green = playerVal;
+          }  
 
     }
 
@@ -222,19 +230,19 @@ export default {
 
 .circle2{
     left: 5px;
-    background-color: rgb(127, 250, 178);
+    background-color: #B0FF00;
 }
 
 .circle1{
     right: 5px;
-    background-color: rgb(250, 98, 98);
+    background-color: #FF0040;
 }
 
 .upArr{
-  color: rgb(127, 250, 178);
+  color: #B0FF00;
 }
 
 .downArr{
-  color:  rgb(250, 98, 98);
+  color:  #FF0040;
 }
 </style>

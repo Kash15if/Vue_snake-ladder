@@ -16,10 +16,11 @@
 
     <div class="dice">
 
-        <span id="num"></span>
+        <span id="num">{{!activeRed? "red" : "green"}} : {{dice}}</span>
 
         <button @click="getNum('green')" class="play1" :class="activeRed ? 'disableBtn': ''" :disabled="activeRed">1</button>
         <button @click="getNum('red')" class="play2" :class="activeRed ? '': 'disableBtn'" :disabled="!activeRed">2</button>
+        
     </div>
 
   
@@ -40,6 +41,7 @@ export default {
       allval: [],
       red: 1,
       green: 1,
+      dice: 0,
       activeRed: true
     }
   },
@@ -67,7 +69,9 @@ export default {
               return doc.data();
           });
 
-          let diceVal  = Math.abs(Math.ceil(Math.random() * 10 - 5)) +1;
+          let diceVal  = Math.ceil(Math.random() * 6) +1;
+
+          this.dice = diceVal
 
         var playerVal = dataAll[col]
         
@@ -126,12 +130,10 @@ export default {
         
         await timeout(2000);
           this.allval[playerVal-1][col] = false;
-          console.log(this.allval[playerVal-1][col])
 
           playerVal += this.allval[playerVal-1].plusminus
           
           this.allval[playerVal-1][col] = true; 
-          console.log(this.allval[playerVal-1][col])
 
           if(this.activeRed){
           //console.log(playerVal);
@@ -162,6 +164,7 @@ export default {
 
 .dice{
     position: relative;
+    margin-top: 10px;
   }
         
 .play1{
@@ -249,5 +252,13 @@ export default {
 .disableBtn{
   background:#fff;
   pointer-events: none;
+}
+
+#num{
+    font-size: 30px;
+    font-weight: 900;
+    background-color: black;
+    color: white;
+    padding:10px 20px;
 }
 </style>

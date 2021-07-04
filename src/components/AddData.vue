@@ -27,6 +27,7 @@ export default {
         red: 1,
         green: 1,
         activeRed: true,
+        dice: 0,
         "name": x
       };
 

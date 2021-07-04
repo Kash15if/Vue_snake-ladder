@@ -16,7 +16,7 @@
 
     <div class="dice">
 
-        <span id="num">{{!activeRed? "red" : "green"}} : {{dice}}</span>
+        <span id="num">{{(dice == 0)? "" :(!activeRed? "red" : "green")}} : {{dice}}</span>
 
         <button @click="getNum('green')" class="play1" :class="activeRed ? 'disableBtn': ''" :disabled="activeRed">1</button>
         <button @click="getNum('red')" class="play2" :class="activeRed ? '': 'disableBtn'" :disabled="!activeRed">2</button>

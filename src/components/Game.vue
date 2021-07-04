@@ -18,8 +18,8 @@
 
         <span id="num"></span>
 
-        <button @click="getNum('green')" class="play1" :disabled="activeRed">1</button>
-        <button @click="getNum('red')" class="play2" :disabled="!activeRed">2</button>
+        <button @click="getNum('green')" class="play1" :class="activeRed ? 'disableBtn': ''" :disabled="activeRed">1</button>
+        <button @click="getNum('red')" class="play2" :class="activeRed ? '': 'disableBtn'" :disabled="!activeRed">2</button>
     </div>
 
   
@@ -244,5 +244,10 @@ export default {
 
 .downArr{
   color:  #FF0040;
+}
+
+.disableBtn{
+  background:#fff;
+  pointer-events: none;
 }
 </style>

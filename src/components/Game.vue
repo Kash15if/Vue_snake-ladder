@@ -70,7 +70,7 @@ export default {
               return doc.data();
           });
 
-          let diceVal  = Math.ceil(Math.random() * 6) +1;
+          let diceVal  = Math.ceil(Math.random() * 6);
 
           this.dice = diceVal
 

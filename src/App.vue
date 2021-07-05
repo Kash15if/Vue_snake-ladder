@@ -1,29 +1,20 @@
 <template>
   <div>
-  
-      <router-view/>
-
+    <router-view />
   </div>
-   
 </template>
 
 <script>
 import db from "./components/firebaseinit";
 
 export default {
-  name: 'App',
-  components: {
-    
+  name: "App",
+  components: {},
+  data() {
+    return {};
   },
-  data(){
-    return{
-      
-    }
-  },
-  created(){
-
-  }
-}
+  created() {},
+};
 </script>
 
 <style>

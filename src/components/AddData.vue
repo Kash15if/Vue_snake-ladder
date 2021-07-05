@@ -1,52 +1,43 @@
 <template>
-
-<div>
-  <div><button @click="dataToDb">reset value</button></div>
-</div> 
+  <div>
+    <div><button @click="dataToDb">reset value</button></div>
+  </div>
 </template>
 
 <script>
-
 import db from "./firebaseinit";
 
 export default {
-  name: 'AddData',
-  data(){
-    return{
-      
-    }
+  name: "AddData",
+  data() {
+    return {};
   },
   methods: {
-
-    async dataToDb(){
-      
+    async dataToDb() {
       var x = await require("./data.json");
-      
-      const data = {
 
+      const data = {
         red: 1,
         green: 1,
         activeRed: true,
         dice: 0,
-        "name": x
+        name: x,
       };
 
       // Add a new document in collection "cities" with ID 'LA'
-      const res = await db.collection('ludo').doc('data1').set(data);
-    }
-
-
-  }
-
-
-}
+      const res = await db
+        .collection("ludo")
+        .doc("data1")
+        .set(data);
+    },
+  },
+};
 </script>
-
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 button {
-  background-color: #4CAF50; /* Green */
+  background-color: #4caf50; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -59,14 +50,13 @@ button {
 }
 
 button {
-  background-color: white; 
-  color: black; 
-  border: 2px solid #4CAF50;
+  background-color: white;
+  color: black;
+  border: 2px solid #4caf50;
 }
 
 button:hover {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
 }
-
 </style>

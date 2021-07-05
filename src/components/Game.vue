@@ -1,55 +1,65 @@
 <template>
   <div>
-
-    <div id="demo" class="flex-container" >
-        <div v-for="(val, index) in allval" :key="index">
-            <div class="arrow" v-if="val.isSnakeOrLadder">
-              <span class="upArr" v-if="val.plusminus > 0">&#8593;<b> {{val.plusminus}}</b></span>
-              <span class="downArr" v-if="val.plusminus < 0">&#x2193;<b> {{val.plusminus}}</b></span>
-            </div>
-            <b v-if="!val.isSnakeOrLadder"> {{index + 1}} </b> 
-            <div class="circle circle1" v-if="val.red"></div>
-            <div class="circle circle2" v-if="val.green"></div>
+    <div id="demo" class="flex-container">
+      <div v-for="(val, index) in allval" :key="index">
+        <div class="arrow" v-if="val.isSnakeOrLadder">
+          <span class="upArr" v-if="val.plusminus > 0"
+            >&#8593;<b> {{ val.plusminus }}</b></span
+          >
+          <span class="downArr" v-if="val.plusminus < 0"
+            >&#x2193;<b> {{ val.plusminus }}</b></span
+          >
         </div>
-        
+        <b v-if="!val.isSnakeOrLadder"> {{ index + 1 }} </b>
+        <div class="circle circle1" v-if="val.red"></div>
+        <div class="circle circle2" v-if="val.green"></div>
+      </div>
     </div>
 
     <div class="dice">
+      <span id="num"
+        >{{ dice == 0 ? "" : !activeRed ? "red" : "green" }} : {{ dice }}</span
+      >
 
-        <span id="num">{{(dice == 0)? "" :(!activeRed? "red" : "green")}} : {{dice}}</span>
-
-        <button @click="getNum('green')" class="play1" :class="activeRed ? 'disableBtn': ''" :disabled="activeRed">1</button>
-        <button @click="getNum('red')" class="play2" :class="activeRed ? '': 'disableBtn'" :disabled="!activeRed">2</button>
-        
+      <button
+        @click="getNum('green')"
+        class="play1"
+        :class="activeRed ? 'disableBtn' : ''"
+        :disabled="activeRed"
+      >
+        1
+      </button>
+      <button
+        @click="getNum('red')"
+        class="play2"
+        :class="activeRed ? '' : 'disableBtn'"
+        :disabled="!activeRed"
+      >
+        2
+      </button>
     </div>
-
-  
   </div>
-   
 </template>
 
 <script>
 import db from "./firebaseinit";
 
 export default {
-  name: 'Game',
-  components: {
-
-  },
-  data(){
-    return{
+  name: "Game",
+  components: {},
+  data() {
+    return {
       allval: [],
       red: 1,
       green: 1,
       dice: 0,
-      activeRed: true
-    }
+      activeRed: true,
+    };
   },
-  created(){
-
-    db.collection("ludo").doc("data1")
-    .onSnapshot((doc) => {
-
+  created() {
+    db.collection("ludo")
+      .doc("data1")
+      .onSnapshot((doc) => {
         var dataAll = doc.data();
 
         this.allval = dataAll.name;
@@ -57,153 +67,131 @@ export default {
         this.green = dataAll.green;
         this.activeRed = dataAll.activeRed;
         this.dice = dataAll.dice;
-        
-    });
-
+      });
   },
   methods: {
-      async getNum(col){
-          
-          var docRef = await db.collection("ludo").doc("data1");
+    async getNum(col) {
+      var docRef = await db.collection("ludo").doc("data1");
 
-          var dataAll = await docRef.get().then((doc) => {
-              return doc.data();
-          });
+      var dataAll = await docRef.get().then((doc) => {
+        return doc.data();
+      });
 
-          let diceVal  = Math.ceil(Math.random() * 6);
+      let diceVal = Math.ceil(Math.random() * 6);
 
-          this.dice = diceVal
+      this.dice = diceVal;
 
-        var playerVal = dataAll[col]
-        
-          if((diceVal + playerVal) == 100){
-           // alert str winner, new game ok;
+      var playerVal = dataAll[col];
 
-            
-            this.activeRed = true;
-            this.red = 1;
-            this.green = 1;
-            return
-        }
-    else if(diceVal + playerVal > 100){
-        
-    }
-    else{
-  
+      if (diceVal + playerVal == 100) {
+        // alert str winner, new game ok;
 
+        this.activeRed = true;
+        this.red = 1;
+        this.green = 1;
+        return;
+      } else if (diceVal + playerVal > 100) {
+      } else {
         //travel function() with setInterval
-        
-        this.allval[playerVal-1][col] = false;
+
+        this.allval[playerVal - 1][col] = false;
 
         playerVal += diceVal;
-        this.allval[playerVal-1][col] = true;
-        
-        
-        if(this.activeRed){
+        this.allval[playerVal - 1][col] = true;
+
+        if (this.activeRed) {
           //console.log(playerVal);
           this.red = playerVal;
+        } else {
+          this.green = playerVal;
         }
-        else{
-            this.green = playerVal;
-        }
-        
-      
       }
 
-     await db.collection("ludo").doc("data1")
-    .set({
+      await db
+        .collection("ludo")
+        .doc("data1")
+        .set({
+          name: this.allval,
+          green: this.green,
+          red: this.red,
+          dice: this.dice,
+          activeRed: this.activeRed,
+        });
 
-        name: this.allval,
-        green: this.green,
-        red: this.red,
-        dice: this.dice,
-        activeRed: this.activeRed
-        
-    }); 
+      function timeout(ms) {
+        return new Promise((resolve) => setTimeout(resolve, ms));
+      }
 
-    
-        function timeout(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-    }
-
-
-    if(this.allval[playerVal-1].isSnakeOrLadder){
-        
-        
+      if (this.allval[playerVal - 1].isSnakeOrLadder) {
         await timeout(2000);
-          this.allval[playerVal-1][col] = false;
+        this.allval[playerVal - 1][col] = false;
 
-          playerVal += this.allval[playerVal-1].plusminus
-          
-          this.allval[playerVal-1][col] = true; 
+        playerVal += this.allval[playerVal - 1].plusminus;
 
-          if(this.activeRed){
+        this.allval[playerVal - 1][col] = true;
+
+        if (this.activeRed) {
           //console.log(playerVal);
           this.red = playerVal;
-          }
-          else{
-            this.green = playerVal;
-          }  
+        } else {
+          this.green = playerVal;
+        }
+      }
 
-    }
-
-    await db.collection("ludo").doc("data1").set({
-
-        name: this.allval,
-        green: this.green,
-        red: this.red,
-        dice: this.dice,
-        activeRed: !this.activeRed
-        
-    }); 
-  }
-}
-
-}
+      await db
+        .collection("ludo")
+        .doc("data1")
+        .set({
+          name: this.allval,
+          green: this.green,
+          red: this.red,
+          dice: this.dice,
+          activeRed: !this.activeRed,
+        });
+    },
+  },
+};
 </script>
 
 <style>
+.dice {
+  position: relative;
+  margin-top: 10px;
+}
 
+.play1 {
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+  background-color: #04aa6d; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 40%;
+}
 
-.dice{
-    position: relative;
-    margin-top: 10px;
-  }
-        
-.play1{
-      position: fixed;
-      bottom: 30px;
-      right: 10px;
-      background-color: #04AA6D; /* Green */
-      border: none;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      border-radius: 40%;
-      }
-
-.play2{
-      position: fixed;
-      bottom: 30px;
-      left: 10px;
-      background-color: red; 
-      border: none;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      border-radius: 40%;
-      }
-
+.play2 {
+  position: fixed;
+  bottom: 30px;
+  left: 10px;
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 40%;
+}
 
 .flex-container {
   display: flex;
@@ -222,46 +210,46 @@ export default {
   position: relative;
 }
 
-.circle{
-    position: absolute;
-    bottom: 5px;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    color: #fff;
-    padding: 3px;
-    font-size: 25px;
-    font-weight: bolder;
+.circle {
+  position: absolute;
+  bottom: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  color: #fff;
+  padding: 3px;
+  font-size: 25px;
+  font-weight: bolder;
 }
 
-.circle2{
-    left: 5px;
-    background-color: #B0FF00;
+.circle2 {
+  left: 5px;
+  background-color: #b0ff00;
 }
 
-.circle1{
-    right: 5px;
-    background-color: #FF0040;
+.circle1 {
+  right: 5px;
+  background-color: #ff0040;
 }
 
-.upArr{
-  color: #B0FF00;
+.upArr {
+  color: #b0ff00;
 }
 
-.downArr{
-  color:  #FF0040;
+.downArr {
+  color: #ff0040;
 }
 
-.disableBtn{
-  background:#fff;
+.disableBtn {
+  background: #fff;
   pointer-events: none;
 }
 
-#num{
-    font-size: 30px;
-    font-weight: 900;
-    background-color: black;
-    color: white;
-    padding:10px 20px;
+#num {
+  font-size: 30px;
+  font-weight: 900;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
 }
 </style>

@@ -1,802 +1,702 @@
 [
-    {
-        "id": 1,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": true,
-        "green": true
-
-    },
-    {
-        "id": 2,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 3,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 4,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 5,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 6,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 7,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 8,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 9,
-        "isSnakeOrLadder": true,
-        "plusminus": 21,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 10,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 11,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 12,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 13,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 14,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 15,
-        "isSnakeOrLadder": true,
-        "plusminus": 43,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 16,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 17,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 18,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 19,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 20,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 21,
-        "isSnakeOrLadder": true,
-        "plusminus": 21,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 22,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 23,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 24,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 25,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 26,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 27,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 28,
-        "isSnakeOrLadder": true,
-        "plusminus": -22,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 29,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 30,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 31,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 32,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 33,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 34,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 35,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 36,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 37,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 38,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 39,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 40,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 41,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 42,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 43,
-        "isSnakeOrLadder": true,
-        "plusminus": -29,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 44,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 45,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 46,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 47,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 48,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 49,
-        "isSnakeOrLadder": true,
-        "plusminus": 22,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 50,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 51,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 52,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 53,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 54,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 55,
-        "isSnakeOrLadder": true,
-        "plusminus": 32,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 56,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 57,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 58,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 59,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 60,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 61,
-        "isSnakeOrLadder": true,
-        "plusminus": -57,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 62,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 63,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 64,
-        "isSnakeOrLadder": true,
-        "plusminus": 35,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 65,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 66,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 67,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 68,
-        "isSnakeOrLadder": true,
-        "plusminus": -32,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 69,
-        "isSnakeOrLadder": true,
-        "plusminus": 25,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 70,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 71,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 72,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 73,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 74,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 75,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 76,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 77,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 78,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 79,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 80,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 81,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 82,
-        "isSnakeOrLadder": true,
-        "plusminus": -26,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 83,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 84,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 85,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 86,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 87,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 88,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 89,
-        "isSnakeOrLadder": true,
-        "plusminus": -39,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 90,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 91,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 92,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 93,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 94,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 95,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 96,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 97,
-        "isSnakeOrLadder": true,
-        "plusminus": -65,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 98,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id": 99,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    },
-    {
-        "id":100,
-        "isSnakeOrLadder": false,
-        "plusminus": 0,
-        "red": false,
-        "green": false
-
-    }
+  {
+    "id": 1,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": true,
+    "green": true
+  },
+  {
+    "id": 2,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 3,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 4,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 5,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 6,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 7,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 8,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 9,
+    "isSnakeOrLadder": true,
+    "plusminus": 21,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 10,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 11,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 12,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 13,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 14,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 15,
+    "isSnakeOrLadder": true,
+    "plusminus": 43,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 16,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 17,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 18,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 19,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 20,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 21,
+    "isSnakeOrLadder": true,
+    "plusminus": 21,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 22,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 23,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 24,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 25,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 26,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 27,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 28,
+    "isSnakeOrLadder": true,
+    "plusminus": -22,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 29,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 30,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 31,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 32,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 33,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 34,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 35,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 36,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 37,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 38,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 39,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 40,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 41,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 42,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 43,
+    "isSnakeOrLadder": true,
+    "plusminus": -29,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 44,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 45,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 46,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 47,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 48,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 49,
+    "isSnakeOrLadder": true,
+    "plusminus": 22,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 50,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 51,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 52,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 53,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 54,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 55,
+    "isSnakeOrLadder": true,
+    "plusminus": 32,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 56,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 57,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 58,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 59,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 60,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 61,
+    "isSnakeOrLadder": true,
+    "plusminus": -57,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 62,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 63,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 64,
+    "isSnakeOrLadder": true,
+    "plusminus": 35,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 65,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 66,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 67,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 68,
+    "isSnakeOrLadder": true,
+    "plusminus": -32,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 69,
+    "isSnakeOrLadder": true,
+    "plusminus": 25,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 70,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 71,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 72,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 73,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 74,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 75,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 76,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 77,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 78,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 79,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 80,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 81,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 82,
+    "isSnakeOrLadder": true,
+    "plusminus": -26,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 83,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 84,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 85,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 86,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 87,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 88,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 89,
+    "isSnakeOrLadder": true,
+    "plusminus": -39,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 90,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 91,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 92,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 93,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 94,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 95,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 96,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 97,
+    "isSnakeOrLadder": true,
+    "plusminus": -65,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 98,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 99,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  },
+  {
+    "id": 100,
+    "isSnakeOrLadder": false,
+    "plusminus": 0,
+    "red": false,
+    "green": false
+  }
 ]

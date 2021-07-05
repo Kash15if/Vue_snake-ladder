@@ -24,7 +24,6 @@ export default {
         name: x,
       };
 
-      // Add a new document in collection "cities" with ID 'LA'
       const res = await db
         .collection("ludo")
         .doc("data1")

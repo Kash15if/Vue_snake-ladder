@@ -85,10 +85,26 @@ export default {
 
       if (diceVal + playerVal == 100) {
         // alert str winner, new game ok;
-
+        console.log("winner:" + col);
         this.activeRed = true;
         this.red = 1;
         this.green = 1;
+
+        var x = await require("./data.json");
+
+        const data = {
+          red: 1,
+          green: 1,
+          activeRed: true,
+          dice: 0,
+          name: x,
+        };
+
+        const res = await db
+          .collection("ludo")
+          .doc("data1")
+          .set(data);
+
         return;
       } else if (diceVal + playerVal > 100) {
       } else {
